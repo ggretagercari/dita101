@@ -1,56 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<?php include_once "header.php"; ?>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body>
 
 <div class="w-50 mx-auto" style="padding-top: 100px;">
-    <h1 class="mb-3">Please sign up</h1>
-    <form>
+  <h1 class="mb-3">Please sign up</h1>
+  <form action="registerLogic.php" method="POST">
+
     <div data-mdb-input-init class="form-outline mb-4">
-    <input type="text" id="form2Example3" class="form-control" />
-    <label class="form-label" for="form2Example1">Name</label>
+      <input type="text" id="form2Example3" class="form-control" name="name" />
+      <label class="form-label" for="form2Example1">Name</label>
 
-  </div>
+    </div>
 
-  <div data-mdb-input-init class="form-outline mb-4">
-    <input type="text" id="form2Example4" class="form-control" />
-    <label class="form-label" for="form2Example1">Surname</label>
-  </div>
+    <div data-mdb-input-init class="form-outline mb-4">
+      <input type="text" id="form2Example4" class="form-control" surname="surname" />
+      <label class="form-label" for="form2Example1">Surname</label>
+    </div>
 
-  <div data-mdb-input-init class="form-outline mb-4">
-    <input type="text" id="form2Example5" class="form-control" />
-    <label class="form-label" for="form2Example1">username</label>
-  </div>
+    <div data-mdb-input-init class="form-outline mb-4">
+      <input type="text" id="form2Example5" class="form-control" username="username" />
+      <label class="form-label" for="form2Example1">username</label>
+    </div>
 
-  <!-- Email input -->
-  <div data-mdb-input-init class="form-outline mb-4">
-    <input type="email" id="form2Example1" class="form-control" />
-    <label class="form-label" for="form2Example1">Email address</label>
-  </div>
+    <!-- Email input -->
+    <div data-mdb-input-init class="form-outline mb-4">
+      <input type="email" id="form2Example1" class="form-control" email="email" />
+      <label class="form-label" for="form2Example1">Email address</label>
+    </div>
 
-  <!-- Password input -->
-  <div data-mdb-input-init class="form-outline mb-4">
-    <input type="password" id="form2Example2" class="form-control" />
-    <label class="form-label" for="form2Example2">Password</label>
-  </div>
+    <!-- Password input -->
+    <div data-mdb-input-init class="form-outline mb-4">
+      <input type="password" id="form2Example2" class="form-control" password="password" />
+      <label class="form-label" for="form2Example2">Password</label>
+    </div>
 
-  <!-- Submit button -->
-  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">Sign in</button>
+    <!-- Submit button -->
+    <button type="submit" name="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">Sign in</button>
 
-  <!-- Register buttons -->
-  <div class="text-center">
-    <p>Han an account? <a href="#!">Sign in>
+    <!-- Register buttons -->
+    <div class="text-center">
+      <p>Han an account? <a href="#!">Sign in</a></p>
 
-  </div>
-</form>
+    </div>
+  </form>
+
+  <form action="registerLogic.php">
+    <input type="text" name="name">
+    <input type="submit">
+  </form>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-
+<?php include_once "footer.php"; ?>
 </body>
+
 </html>
