@@ -12,24 +12,24 @@
     </div>
 
     <div data-mdb-input-init class="form-outline mb-4">
-      <input type="text" id="form2Example4" class="form-control" surname="surname" />
+      <input type="text" id="form2Example4" class="form-control" name="surname" />
       <label class="form-label" for="form2Example1">Surname</label>
     </div>
 
     <div data-mdb-input-init class="form-outline mb-4">
-      <input type="text" id="form2Example5" class="form-control" username="username" />
+      <input type="text" id="form2Example5" class="form-control" name="username" />
       <label class="form-label" for="form2Example1">username</label>
     </div>
 
     <!-- Email input -->
     <div data-mdb-input-init class="form-outline mb-4">
-      <input type="email" id="form2Example1" class="form-control" email="email" />
+      <input type="email" id="form2Example1" class="form-control" name="email" />
       <label class="form-label" for="form2Example1">Email address</label>
     </div>
 
     <!-- Password input -->
     <div data-mdb-input-init class="form-outline mb-4">
-      <input type="password" id="form2Example2" class="form-control" password="password" />
+      <input type="password" id="form2Example2" class="form-control" name="password" />
       <label class="form-label" for="form2Example2">Password</label>
     </div>
 
@@ -43,10 +43,6 @@
     </div>
   </form>
 
-  <form action="registerLogic.php">
-    <input type="text" name="name">
-    <input type="submit">
-  </form>
 </div>
 <?php include_once "footer.php"; ?>
 </body>
